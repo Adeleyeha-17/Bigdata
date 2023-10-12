@@ -21,11 +21,11 @@ export const Navbar:React.FC = () => {
       </ul>
 
       <div onClick={handleToggle}>
-         {!nav ? <AiOutlineClose size={20} className="sm:hidden" /> : <AiOutlineMenu size={20} className="sm:hidden"/>}
+         {nav ? <AiOutlineClose size={20} className="sm:hidden" /> : <AiOutlineMenu size={20} className="sm:hidden"/>}
          
       </div>
 
-      <div className={!nav ? "fixed left-0 top-0 w-1/2 h-full border-r border-gray-900 sm:hidden transition-all ease-in-out duration-500" : "fixed -left-full"}>
+      <div className={nav ? "fixed left-0 top-0 w-1/2 h-full border-r border-gray-900 sm:hidden transition-all ease-in-out duration-500" : "fixed -left-full"}>
          <ul className="pt-20 mx-3">
          <li className="p-4 border-b border-gray-700">Home</li>
          <li className="p-4 border-b border-gray-700">Company</li>
