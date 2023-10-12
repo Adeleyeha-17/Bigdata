@@ -21,7 +21,7 @@ export const Navbar:React.FC = () => {
       </ul>
 
       <div onClick={handleToggle}>
-         {nav ? <AiOutlineClose size={20} className="sm:hidden" /> : <AiOutlineMenu size={20} className="sm:hidden"/>}
+         {nav ? <AiOutlineClose size={25} className="sm:hidden" /> : <AiOutlineMenu size={25} className="sm:hidden"/>}
          
       </div>
 
