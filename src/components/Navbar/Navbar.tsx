@@ -1,3 +1,4 @@
+import {AiOutlineClear, AiOutlineMenu} from "react-icons/ai"
 
 export const Navbar = () => {
   return (
