@@ -20,7 +20,7 @@ export const Navbar:React.FC = () => {
          <li className="p-4">Contact</li>
       </ul>
 
-      <div onClick={handleToggle}>
+      <div onClick={handleToggle} className="cursor">
          {nav ? <AiOutlineClose size={25} className="sm:hidden" /> : <AiOutlineMenu size={25} className="sm:hidden"/>}
          
       </div>
