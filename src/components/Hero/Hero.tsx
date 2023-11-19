@@ -1,3 +1,4 @@
+import Typed from 'react-typed';
 
 export const Hero:React.FC = () => {
    
@@ -10,6 +11,15 @@ export const Hero:React.FC = () => {
                <p className="md:text-5xl sm:text-4xl text-xl font-bold">
                   flex, flexible financing for
                </p>
+
+            <Typed strings={[
+               "BTB",
+               "BTC",
+               "SAS"
+            ]}  
+            typeSpeed={120}
+            backSpeed={140}
+            loop />
             </div>
       </div>
   
