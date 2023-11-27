@@ -1,6 +1,26 @@
-import Typed from 'react-typed';
+import React from "react"
+import Typed from 'typed.js';
+
 
 export const Hero:React.FC = () => {
+
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        "BTB",
+      "BTC",
+      "SAS"],
+      typeSpeed: 120,
+      backSpeed: 140,
+      loop: true
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
    
   return (
     <div className="text-white">
@@ -12,16 +32,9 @@ export const Hero:React.FC = () => {
                   Fast, flexible financing for
                </p>
 
-            <Typed
-            className="md:text-5xl sm:text-4xl text-xl font-bold py-4"
-             strings={[
-               "BTB",
-               "BTC",
-               "SAS"
-            ]}  
-            typeSpeed={120}
-            backSpeed={140}
-            loop />
+            <span
+            className="md:text-5xl sm:text-4xl text-xl font-bold py-4" ref={el} />
+            
             </div>
 
             <p className="md:text-2xl text-lg font-bold text-gray-500">Monitor your data analytics to increase revenue for BTB, BTC, & SASS platforms.</p>
