@@ -33,7 +33,7 @@ export const Hero:React.FC = () => {
                </p>
 
             <span
-            className="md:text-5xl sm:text-4xl text-xl font-bold py-4" ref={el} />
+            className="md:text-5xl sm:text-4xl text-xl font-bold py-5" ref={el} />
             
             </div>
 
