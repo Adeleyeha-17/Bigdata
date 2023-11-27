@@ -1,9 +1,10 @@
+import analyticsImage from "../../assets/data analytics.jpg"
 
 export const Analytics = () => {
   return (
     <div className="w-full bg-white py-16 px-4">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
-          <img src="" alt="/" className="w-[500px] mx-auto my-4"/>
+          <img src={analyticsImage} alt="Analytics" className="w-[500px] mx-auto my-4 rounded-sm"/>
 
           <div className="flex flex-col justify-center">
             <p className="text-[#00df9a] font-bold">DATA ANALYTICS DASHBOARD</p>
